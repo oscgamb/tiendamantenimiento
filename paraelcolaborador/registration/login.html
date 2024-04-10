@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>--LOGIN-- </h1>
+    <p><a href="{%url 'paraelcolaborador/' %}" class="btn btn-outline-danger mb-2">Atras</a></p>
+    <form action="" method='post'>
+    {% csrf_token %}
+
+    <input type="text" name="username" id="" placeholder="Usuario">
+    <br>
+    <input type="password" name="password" id="" placeholder="Clave">
+    <br>
+    <button type="submit" class="btn btn-outline-primary mb-2">Iniciar sesion</button>  
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+{% extends "proyectowebapp/base.html" %}  
+
+{% load static %}
+
+{% block content %}
+
+	
+	<h1 style="color: black;">--LOGIN-- </h1>
+	
+	<form action="" method='post'>
+		{% csrf_token %}
+
+		<input type="text" name="username" id="" placeholder="Usuario">
+		<br>
+		<input type="password" name="password" id="" placeholder="Clave">
+		<br>
+		<button type="submit" class="btn btn-outline-primary mb-2">Iniciar sesion</button>
+
+	</form>
+
+	{% endblock %}
